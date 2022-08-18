@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  position: absolute;
+  top: 5vh;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+}
+.header-text {
+  font-weight: normal;
+  margin-left: 5vw;
+  font-size: 8vw;
+  white-space: no-wrap;
+}
+.navbar {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: 2vw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: flex-end;
+}
+.navbar-open,
+.navbar-close {
+  font-size: 10vw;
+  background-color: rgba(0, 0, 0, 0%);
+  outline: none;
+  border: none;
+  margin-left: auto;
+  margin-right: 4vw;
+}
+.navbar-open:hover {
+  cursor: pointer;
+}
+.navbar > a {
+  font-size: 6vw;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -5vh;
+}
+.login-title {
+  margin-top: 5vh;
+  font-size: 6vw;
+}
+
+.login-info {
+  position: absolute;
+  margin-inline: auto;
+  left: 0px;
+  right: 0px;
+  bottom: 5vh;
+  width: 85vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 55px;
+  background: linear-gradient(225deg, #bcbcbc, #e0e0e0);
+  box-shadow: -5px 5px 6px #545454, 5px -5px 6px #ffffff;
+}
+.login-info > input,
+.login-info > button {
+  outline: none;
+  border: none;
+  width: 90%;
+  height: 10%;
+  margin-top: 10%;
+  border-radius: 32px;
+  background: #d1d1d1;
+  box-shadow: -5px 5px 7px #545454, 5px -5px 7px #ffffff;
+}
+.login-info > input {
+  text-align: left;
+  padding-inline: 5%;
+  font-size: 4.5vw;
+}
+.login-info > input:invalid {
+  box-shadow: 0px 0px 2px 5px #ff4757;
+}
+.login-info > input::placeholder {
+  font-size: 5vw;
+}
+.login-info > button {
+  margin-top: 25%;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #e0e0e0, #bcbcbc);
+  box-shadow: -5px 5px 5px #545454, 5px -5px 5px #ffffff;
+  width: 70%;
+  height: 7.5%;
+}
+.login-info > button:hover {
+  cursor: pointer;
+}
+.login-info > button:active {
+  border-radius: 32px;
+  background: #d1d1d1;
+  box-shadow: inset -5px 5px 5px #545454, inset 5px -5px 5px #ffffff;
+}
+.create-account-link {
+  margin-bottom: 15%;
+}
